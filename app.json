@@ -2,6 +2,10 @@
   "expo": {
     "name": "apprntemperatura",
     "slug": "apprntemperatura",
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,9 +19,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nilton.apptemperatura"
     },
     "android": {
+      "package": "com.nilton.apptemperatura",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -25,6 +31,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7481e943-e61e-4299-afa7-0898a0b6d146"
+      }
     }
   }
 }
